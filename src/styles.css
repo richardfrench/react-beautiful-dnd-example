@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.drag-handle {
+  border: 2px solid blue;
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.item {
+  border: 2px solid gray;
+  background: white;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.draggable {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.draggable.dragging .drag-handle {
+  background: cornflowerblue;
+}
+
+.draggable.dragging .item {
+  background: lightgray;
+}
+
+.droppable {
+  padding: 1rem;
+}
+
+.droppable.dropping {
+  background: #90ee90;
+}
